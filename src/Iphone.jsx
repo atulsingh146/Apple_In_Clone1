@@ -1,3 +1,6 @@
+import iphoneTop from './assets/iphone_top.png'; // ✅ Importing the image
+import './App.css'; // Optional: if needed for styles
+
 const Iphone = () => {
   return (
     <div className="relative bg-customGrey min-h-screen flex flex-col items-center text-center px-4">
@@ -12,13 +15,15 @@ const Iphone = () => {
             Shop iPhone
           </button>
         </div>
-        <h3 className="text-lg font-bold  text-gray-600 bg-gradient-to-r from-[#148BF7] via-[#BB62FC] to-[#F3493F] bg-clip-text text-transparent">
+        <h3 className="text-lg font-bold text-gray-600 bg-gradient-to-r from-[#148BF7] via-[#BB62FC] to-[#F3493F] bg-clip-text text-transparent">
           Built for Apple Intelligence.
         </h3>
       </div>
+
+      {/* ✅ Fixed image path using imported image */}
       <div className="absolute bottom-0 left-1/2 -translate-x-1/2 w-full max-w-5xl">
         <img
-          src="src/assets/iphone_top.png"
+          src={iphoneTop}
           alt="iPhone"
           className="w-full object-contain"
         />

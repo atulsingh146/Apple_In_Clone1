@@ -5,6 +5,7 @@ import tabsImg from "./assets/tabs.png";
 import mobImg from "./assets/mob.png";
 import tradeInImg from "./assets/tradein.png";
 import handImg from "./assets/hand.png";
+import bgImage from "./assets/bg.png"; // ✅ Import bg.png properly
 
 const Collab = () => {
   return (
@@ -26,6 +27,7 @@ const Collab = () => {
           </div>
         </div>
       </div>
+
       <div className="w-full md:w-1/2 p-1">
         <div className="min-h-screen flex flex-col items-center text-center p-6 space-y-2 bg-custom-gradient">
           <h1 className="text-4xl font-bold flex items-center justify-center gap-2">
@@ -41,11 +43,12 @@ const Collab = () => {
             </button>
           </div>
           <img src={tabsImg} alt="iPad tabs" />
-          <h3 className="font-bold  text-lg  text-gray-600 bg-gradient-to-r from-[#148BF7] via-[#BB62FC] to-[#F3493F] bg-clip-text text-transparent">
+          <h3 className="font-bold text-lg text-gray-600 bg-gradient-to-r from-[#148BF7] via-[#BB62FC] to-[#F3493F] bg-clip-text text-transparent">
             Built for Apple Intelligence.
           </h3>
         </div>
       </div>
+
       <div className="w-full md:w-1/2 p-1">
         <div
           className="relative min-h-screen bg-cover bg-center"
@@ -60,6 +63,7 @@ const Collab = () => {
           </div>
         </div>
       </div>
+
       <div className="w-full md:w-1/2 p-1">
         <div className="min-h-screen flex flex-col items-center text-center p-6 space-y-2 bg-black">
           <h1 className="text-4xl font-semibold text-white">iPad Pro</h1>
@@ -73,17 +77,17 @@ const Collab = () => {
             </button>
           </div>
           <img src={mobImg} alt="iPad Pro mobile" />
-          <h3 className="font-bold text-lg  text-gray-600 bg-gradient-to-r from-[#148BF7] via-[#BB62FC] to-[#F3493F] bg-clip-text text-transparent">
+          <h3 className="font-bold text-lg text-gray-600 bg-gradient-to-r from-[#148BF7] via-[#BB62FC] to-[#F3493F] bg-clip-text text-transparent">
             Built for Apple Intelligence.
           </h3>
         </div>
       </div>
+
       <div className="w-full md:w-1/2 p-1">
         <div
           className="relative min-h-screen bg-cover bg-center"
           style={{
-            backgroundImage:
-              "url('https://www.apple.com/v/airpods/x/images/overview/hero__gb4d3fd8jnu6_large.jpg')",
+            backgroundImage: `url(${bgImage})`, // ✅ Corrected local bg image usage
           }}
         >
           <div className="absolute inset-0 bg-black/40"></div>
@@ -103,6 +107,7 @@ const Collab = () => {
           </div>
         </div>
       </div>
+
       <div className="w-full md:w-1/2 p-1">
         <div className="min-h-screen flex flex-col items-center text-center p-6 space-y-2 bg-customGrey">
           <h1 className="text-4xl">

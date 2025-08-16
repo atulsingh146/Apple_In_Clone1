@@ -1,4 +1,5 @@
 import './App.css';
+import logo from './assets/logo.png'; // ✅ Importing the logo correctly
 
 const Header = () => {
   return (
@@ -7,7 +8,7 @@ const Header = () => {
         <div className="h-6 w-6">
           <img
             className="object-contain w-full h-full"
-            src="src/assets/logo.png"
+            src={logo}
             alt="Logo"
           />
         </div>

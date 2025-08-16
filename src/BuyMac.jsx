@@ -1,8 +1,10 @@
+import macVideo from './assets/macmini.mp4'; // ✅ import video file
+
 const BuyMac = () => {
   return (
     <main className="relative min-h-screen overflow-hidden">
       <video
-        src="src/assets/macmini.mp4" 
+        src={macVideo}
         autoPlay
         muted
         loop
