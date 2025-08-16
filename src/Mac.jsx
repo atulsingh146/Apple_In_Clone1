@@ -11,8 +11,7 @@ const Mac = () => {
           Buy
         </button>
       </div>
-      <img src="src/assets/mac_second.png"  className 
-      ="h-64 object-contain" alt="mac" />
+      <img src="src/assets/mac_second.png"  className ="h-64 object-contain" alt="mac" />
       <h3 className=" font-bold text-lg  text-gray-600 bg-gradient-to-r from-[#148BF7] via-[#BB62FC] to-[#F3493F] bg-clip-text text-transparent">Built for Apple Intelligence.</h3>
     </div>
   );
